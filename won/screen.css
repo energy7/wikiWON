@@ -1,0 +1,1117 @@
+/*
+ * CSS File For WON MediWiki Skin
+ * 2012 ArxNet Development Team + Energy7 Design
+ */
+
+/*------ RESET --------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /* make IE8+ match webkit box model: */
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -ms-box-sizing: border-box; box-sizing: border-box; 
+}
+
+/* j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/*------ WEBFONTS --------*/
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/skins/won/webfonts/League_Gothic-webfont.eot'); 
+    src: url('/skins/won/webfonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/skins/won/webfonts/League_Gothic-webfont.woff') format('woff'),
+         url('/skins/won/webfonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('/skins/won/webfonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansBoldItalic';
+    src: url('/skins/won/webfonts/PTS76F-webfont.eot');
+    src: url('/skins/won/webfonts/PTS76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/skins/won/webfonts/PTS76F-webfont.woff') format('woff'),
+         url('/skins/won/webfonts/PTS76F-webfont.ttf') format('truetype'),
+         url('/skins/won/webfonts/PTS76F-webfont.svg#PTSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('/skins/won/webfonts/PTS75F-webfont.eot');
+    src: url('/skins/won/webfonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/skins/won/webfonts/PTS75F-webfont.woff') format('woff'),
+         url('/skins/won/webfonts/PTS75F-webfont.ttf') format('truetype'),
+         url('/skins/won/webfonts/PTS75F-webfont.svg#PTSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('/skins/won/webfonts/PTS56F-webfont.eot');
+    src: url('/skins/won/webfonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/skins/won/webfonts/PTS56F-webfont.woff') format('woff'),
+         url('/skins/won/webfonts/PTS56F-webfont.ttf') format('truetype'),
+         url('/skins/won/webfonts/PTS56F-webfont.svg#PTSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('/skins/webfonts/PTS55F-webfont.eot');
+    src: url('/skins/webfonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/skins/webfonts/PTS55F-webfont.woff') format('woff'),
+         url('/skins/webfonts/PTS55F-webfont.ttf') format('truetype'),
+         url('/skins/webfonts/PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*------ GLOBAL --------*/
+
+body {
+  margin: 0;
+  background: #FFF;
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+#content {
+	margin: 0 10%;
+}
+
+#maintable td {
+	vertical-align: top;
+}
+
+
+hr {
+	display: block; 
+	height: 1px; 
+	border: 0; 
+	border-top: 1px solid #CCC; 
+	margin: 20px 0; 
+	padding: 0; 
+}
+
+
+
+/*------ TYPOGRAPHY --------*/
+
+
+h1, h2, h3, h4, h5 {font-family: 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; font-weight: normal; line-height: 1.3em;}
+
+h6, b, strong, dt {font-family: 'PTSansBold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; font-weight: normal;}
+
+p, li, dd, td  {font-family: 'PTSansRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; line-height: 1.5em;}
+
+i, em  {font-family: 'PTSansItalic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; font-style: normal; }
+
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 25px;}
+h4 {font-size: 21px;}
+h5 {font-size: 18px;}
+h6, p, li, dd, dt  {font-size: 14px;}
+
+h1, h2, h3, h4, h5, h6, p {margin: 1em 0 0;}
+dd {margin-left: 2em; margin-bottom: .75em;}
+td {line-height: 1.3em;}
+
+.mw-content-ltr h2 {margin-bottom: 0;}
+.mw-content-ltr h2 + h5 {margin-top: 0; color: #999;}
+
+#bodytext {padding-bottom: 30px;}
+#bodytext ul {margin: 0 20px; list-style: square;}
+#bodytext li {margin: .5em 0;}
+
+#firstHeading {margin: 10px 0;}
+
+.catlinks {
+    background-color: #F9F9F9;
+    border-color: #FFCC00;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    clear: both;
+    margin-top: 1em;
+    padding: 5px;
+}
+
+/*------ COLORS (for reference only) --------*/
+
+.occupy {color: #FFCC00;}
+.black {color: #333;}
+.gray1 {color: #666;}
+.gray2 {color: #999;}
+.gray3 {color: #CCC;}
+.gray4 {color: #EEE;}
+.navy {color: #335D99;}
+.cyan {color: #00AEEF;}
+.red {color: #CC3333;}
+.green {color: #00AB4E;}
+
+
+
+/*------ LINKS + BUTTONS --------*/
+
+a, a:visited, #content a  {
+	text-decoration: none; 
+	color: #335D99;
+}
+a:hover, #content a:hover {
+	text-decoration: underline; 
+	color: #333;
+}
+
+.new {
+  color: #CC3333!important;
+}
+
+ 
+div#content a.external {
+  background: url(images/wonexternal.png) center right no-repeat;
+  background: url(images/wonexternal.png) center right no-repeat!ie;
+  padding-right: 13px;
+}
+
+
+
+.editsection {
+  font-size: .5em;
+  line-height: 1.5em;
+  background: #333;
+  padding: 0 5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  display: inline-block;
+  margin-top: .5em;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+}
+
+#content .editsection a {
+  color: #FFF;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"], input[type="file"] {
+	font-size: 18px;
+	color: #FFF;
+	background: #333;
+	font-family: 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: 1px; 
+	font-weight: normal; 
+	line-height: 1.3em;
+	border: 0;
+	padding: 3px 15px;
+	margin: 10px 10px 10px 0;
+	cursor: pointer;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="file"]:hover {
+	background: #335D99;
+}
+
+#searchsubmit, #powersearch input[type="submit"], #powersearch input[type="button"] {
+	height: 21px;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 0 8px;
+	margin: 0 0 0 4px;
+	display: inline-block;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
+
+
+.mw-prefs-buttons input {
+	float: left;
+}
+.mw-prefs-buttons a, .editHelp a {
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'LeagueGothicRegular','Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Arial,sans-serif;
+text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1em;
+	margin: 14px 0;
+}
+
+
+/* special cases */
+
+.mw-recentchanges-table input[type="submit"] {
+	margin: 0;
+}
+
+
+/*---- IMAGES -------*/
+
+.thumbinner {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 10px;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	color: #999;
+}
+
+
+/*------ LISTS --------*/
+
+.topicList {
+	clear: both;
+}
+.topicList ul {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;
+}
+.topicList li {
+	float: left; 
+	display: inline-block; 
+	margin: 0 0 .75em; 
+	padding: 0;
+}
+
+.homeList {
+	margin-bottom: 20px;
+}
+.homeList li {
+	width: 25%; 
+	font: 21px 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+}
+
+/* history */
+
+#pagehistory {
+	list-style: none;
+	margin: 0!important;
+}
+#pagehistory li {
+	padding: 2px 5px;
+	font-size: 13px;
+}
+#pagehistory li.selected {
+	background-color: #FFF0B2;
+	border: 0;
+}
+#pagehistory .mw-usertoollinks {
+	display: none;
+}
+
+/* recent changes */
+
+.rcoptions {
+	margin-top: 20px;
+}
+
+.mw-recentchanges-table label {
+	line-height: 30px;
+}
+
+#bodytext .special {
+	list-style: none;
+	margin: 0!important;
+}
+.special li {
+	padding: 4px 0 0;
+	font-size: 13px;
+	border-top: 1px solid #DDD;
+}
+.special li.selected {
+	padding: 4px 5px 0;
+	background-color: #FFF0B2;
+	border: 0;
+}
+.special .mw-usertoollinks {
+	display: none;
+}
+
+
+
+/* watchlist */
+
+#mw-watchlist-options ul {
+	list-style: none;
+}
+#mw-watchlist-options li {
+	font-size: 13px;
+}
+
+
+
+/*------ TABLES --------*/
+
+table.wikitable {
+	border-left: 0;
+	border-right: 0;
+}
+table.wikitable td {
+	border-left: 0;
+	border-right: 0;
+	padding: 3px 5px;
+}
+
+.inset {
+	border: 1px solid #DDD;
+	width: 30%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	clear: right;
+	float: right;
+}
+.inset td, .inset th {
+	padding: 5px;
+	font-size: 13px;
+}
+
+
+/*------ FORMS --------*/
+
+fieldset {
+	border: 0;
+	border-top: 1px dashed #999;
+	padding: 10px 0;
+	font-size: 13px;
+	margin-top: 20px;
+}
+label {
+	font-size: 13px;
+}
+fieldset fieldset {
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+legend {
+	padding: 0;
+	font-family: 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; text-transform: uppercase; 
+	letter-spacing: 1px;
+	font-size: 21px; 
+}
+fieldset fieldset legend {
+	font-size: 18px;
+	margin-left: -20px;
+}
+fieldset td {
+	padding: 5px;
+}
+
+.htmlform-tip {
+	font-size: 12px; 
+	color: #999;
+}
+textarea {
+	border: 1px solid #999;
+}
+input, input[type="password"], input[type="search"] {
+	padding: 2px 3px;
+	font-size: 13px;
+	margin: 0;
+}
+
+#editform {
+	margin-top: 5px;
+}
+
+/*------ ALERTS --------*/
+
+.invalid, #mw-emailaddress-validity.invalid {
+	border: 0;
+	background-color: #CC3333;
+	color: #FFF;
+}
+
+body.ltr #mw-emailaddress-validity {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.errorbox, .warningbox, .successbox {
+	font-size: larger;
+	font-weight: bold;
+	border: 0;
+	padding: 0 20px;
+	float: left;
+	margin: 10px 0;
+	color: #FFF;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.errorbox p, .warningbox p, .successbox p {
+	line-height: 1em;
+}
+.errorbox {
+	background-color: #CC3333;
+}
+.warningbox {
+	background-color: #FFCC00;
+	color: #333;
+}
+.successbox {
+	background-color: #00AB4E;
+}
+
+
+.noarticletext {
+	padding: 20px 40px;
+}
+.noarticletext p {
+	font-size: 18px;
+	font-family: 'PTSansItalic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+}
+
+.previewnote {
+	color: #CC3333;
+	margin-bottom: 1em;
+}
+#mw-previewheader {
+	margin: 20px 0 0;
+}
+.previewnote p {
+	text-indent: 0;
+	margin: 0 0 20px;
+}
+
+.intro, .mw-newarticletext p, #editpage-copywarn p, .mw-history-legend p {
+	font-family: 'PTSansItalic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+}
+
+
+/*------ HEADER --------*/
+
+h1#subLogo {
+	margin: 20px 0 0;
+	}
+h1#subLogo a {
+	color: #333;
+} 
+
+h1#subLogo a:hover {	
+	color: #333; 
+}
+h5#tagline {
+	margin: -5px 0 20px; 
+	color: #999;
+}
+
+
+/*------ BANNER TEMPLATE --------*/
+
+#mp-topbanner {
+	background: #FFF;
+	margin: 0 0 20px 0;
+	border: 0;
+	border-bottom: 1px solid #BBB;
+	color: #444;
+}
+#mp-topbanner div {
+	text-align: left;
+}
+#mp-topbanner ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#mp-topbanner li {
+	border-top: 1px solid #BBB;
+	padding: 3px 5px;
+	margin: 0;
+}
+#mp-topbanner li:first-child {
+	border:0;
+}
+#mp-topbanner a, #mp-topbanner strong {
+	font-family: 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: 1px; 
+	font-weight: normal;
+}
+
+
+/*------ FOOTER --------*/
+
+#wikifooter {
+	margin: 40px 10% 10px; 
+	padding: 10px 0; 
+	background: #DDD;
+}
+
+#footer-info, #footer-places, #footer-icons {
+	list-style-type: none; margin: 0 10px; padding: 0;
+}
+#footer-info li, #footer-places li {
+	margin: 0 10px 0 0; font-size: 11px; color: #666; display: inline;
+}
+#footer-copyrightico {
+	margin-top: 10px;
+	float: left;
+}
+#footer-poweredbyico {
+	margin: 10px 10px 0;
+	float: left;
+}
+
+#occupyfooter {
+	background-color: black; height: 36px; width: 100%;
+}
+#brought {
+	float: right; color: #AAA; padding: 10px; font: 11px 'PTSansRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.printfooter {display: none;
+}
+
+
+/*------ NAVIGATION MENU --------*/
+
+#leftpanel {
+	margin-right: 20px;
+}
+
+
+#wikinavigation {
+	width: 160px;
+}
+
+#p-personal {
+	background-color: #DDD;
+    width:160px;
+    float:left;
+    padding-top: 5px;
+	padding-left:10px;
+	padding-bottom: 5px;
+}
+
+#p-personal ul {
+    background-color:#DDD;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+	font: 18px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    color:#335d99;
+}
+#p-personal .mw-collapsed {
+	height: 20px;
+	overflow: hidden;
+}
+#p-personal ul li {
+    background-color:#DDD;
+    border-top:1px solid #dddddd;
+    padding-top:0;
+    padding-bottom:5px;
+	font: 16px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#p-personal ul li a {
+    color:#335d99;
+    text-decoration:none;
+}
+
+/*
+#p-personal ul li#pt-anonuserpage a {
+	font-size: 18px;
+}
+#p-personal ul li#pt-userpage a {
+	font-size: 18px;
+}
+*/
+.mw-collapsible-toggle-li {
+	float: right;
+	width: 18px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.mw-collapsible-toggle {
+	display: block;
+	cursor: pointer;
+	text-indent: -999em; 
+	background: url(images/wontoggle.png) no-repeat 0 -18px;
+}
+.mw-collapsible-toggle-collapsed {
+	display: block;
+	cursor: pointer;
+	text-indent: -999em; 
+	background: url(images/wontoggle.png) no-repeat 0 0;
+}
+#pt-userpage {
+	padding-left:10px;
+}
+#pt-mytalk {
+	padding-left:10px;
+}
+
+#pt-preferences {
+	padding-left:10px;
+}
+#pt-watchlist {
+	padding-left:10px;
+}
+#pt-mycontris {
+	padding-left:10px;
+}
+#pt-logout {
+	padding-left:10px;
+}
+#pt-anontalk {
+	padding-left:10px;
+}
+#pt-anonlogin {
+	padding-left:10px;
+}
+
+#p-navigation {
+    width:160px;
+    float:left;
+}
+
+#p-navigation ul {
+    background-color:#FFF;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+#p-navigation ul li {
+    background-color:#FFF;
+    border-bottom:1px solid #dddddd;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 10px;
+	font: 18px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#p-navigation ul li a {
+    color:#335d99;
+    text-decoration:none;
+}
+
+#p-tb {
+    width:160px;
+    float:left;
+	padding-left:10px;
+    border-bottom:1px solid #dddddd;
+}
+
+#p-tb ul {
+    background-color:#FFF;
+    list-style:none;
+    margin:0px;
+    padding: 5px 0px;
+	font: 18px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #335D99;
+}
+
+#p-tb ul li {
+    background-color:#FFF;
+    padding-bottom:0;
+    padding-top:5px;
+    margin-left: 10px;
+	font: 16px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #335D99;
+}
+#p-tb ul li.mw-collapsible-toggle-li {
+	padding-top: 2px;
+}
+
+#p-tb ul li a {
+        color:#335d99;
+        text-decoration:none;
+}
+
+
+/*----END NAVIGATION MENU --------*/
+
+
+
+/*------ WIKI TOOLBAR ------------*/
+
+#wikitoolbar {
+	background-color:#FFCC00;
+	height: 30px;
+  margin-bottom: 10px;
+  min-width: 664px;  /* prevent menus from wrapping */
+}
+
+.vectorTabs li, .vectorMenu li {
+	font: 16px 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+}
+
+
+#p-views ul, #p-namespaces ul {
+    list-style:none;
+    display:block;
+    padding:0px;
+    margin:0 15px 0 0;
+	float:left;
+}
+#p-views ul li, #p-namespaces ul li {
+    display:inline;
+    padding-left:5px;
+    padding-right: 2px;
+    padding-bottom: 6px;
+}
+#p-views ul li a, #p-namespaces ul li a {
+    text-decoration:none;
+    border:none;
+}
+
+#p-views ul li.selected {
+	background: url(images/wonselected.png) no-repeat center bottom;
+}
+#p-namespaces ul li.selected {
+  background: none;
+  padding-bottom: 0;
+}
+#p-views ul li.selected a, #p-namespaces ul li.selected a {
+    color: #333;
+	height: 25px;
+}
+#p-namespaces ul li.selected span {
+  background: #FC0;
+  border-bottom: 2px solid white;
+}
+ 
+#p-views ul li a:hover, 
+#p-namespaces ul li a:hover, 
+#p-cactions ul li a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+#p-views ul li.selected a:hover, 
+#p-namespaces ul li.selected a:hover, 
+#p-cactions ul li.selected a:hover {
+  color: #333;
+}
+
+
+.mwspacer {
+	width:0px;
+	float:left;
+}
+
+#p-cactions ul {
+    list-style:none;
+    display:block;
+    padding:0px;
+    margin:0 10px;
+	float:right;
+}
+#p-cactions ul li {
+    display:inline;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-bottom: 6px;
+}
+#p-cactions ul li a {
+    text-decoration:none;
+    border:none;
+}
+#p-cactions ul li.selected {
+	background: url(images/wonselected.png) no-repeat center bottom;
+}
+#p-cactions ul li.selected a {
+    color: #333;
+}
+
+
+#wikimenuitems {
+    padding:5px;
+    height: 20px;
+}
+
+#searchform {
+    margin-right:5px;
+    margin-top: 4px;
+    float: right;
+}
+
+#searchform #searchInput {
+	height: 16px;
+	line-height: 16px;
+	padding: 0 4px;
+	font-size: 11px;
+	margin: 0;
+	vertical-align: bottom;
+}
+
+
+
+/*--- END WIKI TOOLBAR -----------*/
+
+
+/*--- TABLE OF CONTENTS -----------*/
+
+
+#toc {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 180px;
+	float: right;
+  border: 1px solid #DDD;
+  padding: 9px;
+}
+#toctitle h2 {
+	font-size: 21px;
+	margin-top: 0;
+}
+.toctoggle {
+	float: right;
+	margin-top: -21px;
+    font: 16px 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+#toc ul {
+	list-style: none;
+  margin: 0;
+}
+#toc li {
+	margin-top: .5em;
+	font-size: 13px;
+}
+.tocnumber {
+	margin-right: 5px;
+}
+
+.mw-content-ltr .toc ul ul, 
+.mw-content-ltr #toc ul ul, 
+.mw-content-rtl .mw-content-ltr .toc ul ul, 
+.mw-content-rtl .mw-content-ltr #toc ul ul {
+	margin: 0 0 0 1.3em;
+}
+
+
+#preftoc {
+    list-style:none;
+    display:block;
+    padding:0px;
+    margin: 10px 0;
+}
+#preftoc li, .search-types li {
+    display:inline;
+    margin-right: 15px;
+    font: 16px 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+#preftoc .selected a {
+	color: #333;
+	text-decoration: underline;
+}
+
+
+/*--- END TABLE OF CONTENTS -----------*/
+
+
+
+/*--- UNIQUE ELEMENTS -----------*/
+
+input#wpSummary {
+	margin: 0 0 20px;
+}
+.editCheckboxes {
+	margin: 0 0 10px;
+}
+.editHelp {
+	font-size: 12px;
+}
+#wpTextbox1 {
+	font-size: 14px;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+#powersearch {
+	margin-top: 10px;
+}
+
+
+/*---- SOCIAL MEDIA BOX ----------*/
+
+#social_table {
+	background-color:#ffcc00;
+	width:100%;
+	font: 18px/1.3em 'LeagueGothicRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+#social_table td {width: 33%;
+}
+
+#socialmedia {
+	height:30px;
+	width:100%;
+	background-color:#FFCC00;
+	margin-top: 20px;
+	zoom: 1;
+	display: table-cell;
+}
+/* force right column to be 100% - http://bit.ly/HKzGUD */
+#socialmedia:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+}
+
+
+/*----END SOCIAL MEDIA BOX -------*/
+
+
+
+/*----CUSTOM TEMPLATES -------*/
+
+
+/* welcome page */
+
+.page-Main_Page #firstHeading {
+  display: none;
+} 
+.page-Main_Page .subTitle {
+  margin-top: 10px;
+}
+
+
+/* occupy.net tools page */
+
+table.toolsnav {
+  color: #CCC;
+  border: 0;
+  background-color: #EEE;
+  padding: 5px 10px;
+  box-shadow: none;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+table.toolsnav tr:first-child {
+  font-size: 11px;
+  color: #333;
+}
+table.toolsnav td {
+  border-bottom: 1px solid white;
+}
+table.toolsnav td a {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+table.toolsnav td b {
+  color: #333;
+}
+table.toolsnav .selflink {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+ 
+table.toolssidebar {
+  width: 25%!important;
+  margin-left: 20px!important;
+  margin-bottom: 40px!important;
+  border: 1px solid #BBB!important;
+  clear: right;
+  padding-top: 9px;
+}
+table.toolssidebar td {
+  font-size: 11px;
+  padding: 5px;
+}
+.toolssidebar p, .toolssidebar li, .toolssidebar dd {
+  font-size: 12px;
+  margin: 8px 0;
+  line-height: 1.3em;
+}
+.toolssidebar dl {
+  margin-left: 10px;
+}
+ 
+
+/* general banners */
+ 
+#mp-topbanner {
+  margin: 0 0 10px!important; 
+  border: 0!important;
+  background: #EEE!important; 
+}
+#mp-topbanner td {
+  width: 50%!important;
+  vertical-align: bottom!important;
+  padding: 0 5px;
+}
+.mp-bannertitle {
+  font-size: 24px!important;
+  margin-top: 5px!important;
+}
+.mp-bannersubtext {
+  font-size: 12px!important;
+}
+#bodytext #mp-topbanner ul {
+  list-style: none;
+}
+#mp-topbanner li {
+  float: right;
+  border: 0;
+}
+#mp-topbanner li a, #mp-topbanner li strong {
+  font-family: PTSansRegular, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+#mp-topbanner li strong {
+  font-family: 'PTSansBold','Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Arial,sans-serif;
+  color: #333;
+  background: url(http://wiki.occupy.net/skins/won/images/wonselected.png?2012-03-08T03:15:00Z) no-repeat center bottom;
+  padding-bottom: 8px;
+}
+ 
+ 
+ 
+
